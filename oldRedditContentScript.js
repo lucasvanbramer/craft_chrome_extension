@@ -123,6 +123,6 @@ $(document).ready(function () {
 });
 
 function rgb_from_weight(weight) {
-  const gb = Math.round(255 - weight * 255);
+  const gb = Math.round(255 - weight * weight * 255);
   return `rgb(255, ${gb}, ${gb})`
 }
